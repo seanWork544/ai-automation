@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title>LifeStack Logo</title>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <g fill="none" stroke="#f8fafc" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M148 192h96l48-80 72 128h100" />
+    <path d="M116 320h112l52 72 64-112h152" />
+  </g>
+</svg>
