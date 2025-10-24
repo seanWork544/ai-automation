@@ -5,8 +5,7 @@ install:
 	npm --prefix web install
 
 dev:
-	PYTHONPATH=server uvicorn app.main:app --reload & \
-	npm --prefix web run dev
+	python scripts/dev.py
 
 seed:
 	PYTHONPATH=server python -m app.seed

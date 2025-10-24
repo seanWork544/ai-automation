@@ -13,6 +13,11 @@ LifeStack is a mobile-first productivity companion that blends a weekly calendar
 ```bash
 make install
 ```
+If `make` is unavailable (for example on Windows), run the install steps manually:
+```bash
+pip install -r server/requirements.txt
+npm --prefix web install
+```
 
 ### Running the dev stack
 ```bash
@@ -20,9 +25,20 @@ make dev
 ```
 The command starts the FastAPI server on `http://localhost:8000` and the Vite dev server on `http://localhost:5173`.
 
+On platforms without `make`, launch the stack via the helper script:
+```bash
+python scripts/dev.py
+```
+Use `CTRL+C` to stop both processes.
+
 ### Seeding demo data
 ```bash
 make seed
+```
+Without `make` run the seed script from the `server/` directory:
+```bash
+cd server
+python -m app.seed
 ```
 
 ### Tests
